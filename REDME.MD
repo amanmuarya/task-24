@@ -19,7 +19,6 @@ Just open index.html in a browser. No build step or install required — Tailwin
  
 - hover:scale-110 is used for the 110% hover scale effect (scale-120 is not a valid Tailwind step).
 - Staggering in Section 6 is done with Tailwind's arbitrary-value syntax ([animation-delay:150ms]) on top of the built-in animate-bounce animation, so no custom keyframes are needed anywhere in the project.
-
 ## Tech Used
 - HTML
 - Tailwind CSS (via CDN, @tailwindcss/browser)

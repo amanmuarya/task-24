@@ -2,108 +2,123 @@
 <html lang="en">
 <head>
     <title>Animations & UI Feedback</title>
+    <!-- conact tailwind css  -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>   
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans antialiased p-6 md:p-12">
+<!-- set all screen color and background color  -->
+<body class="bg-gray-200 text-gray-800 font-sans antialiased p-6 md:p-12">
+    <!-- here make class  -->
     <header class="text-center max-w-2xl mx-auto mb-16">
+        <!-- write here header  -->
         <h1 class="text-4xl font-bold text-gray-900 mb-4">Animations & UI Feedback</h1>
         <p class="text-lg text-gray-600">Interact with the elements below to explore smooth animations, transitions, and
             dynamic UI feedback built entirely with Tailwind CSS.</p>
     </header>
     <main class="max-w-5xl mx-auto space-y-20">
+        <!-- here to start section  -->
         <section>
             <h2 class="text-2xl font-bold mb-6 border-b pb-2">Section 1: Built-in Animations</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-sm border flex flex-col items-center text-center">
-                    <div class="w-10 h-10 border-4 border-blue-200 border-t-blue-600 rounded-full animate-spin mb-4">
-                    </div>
-                    <h3 class="font-semibold text-blue-600">animate-spin</h3>
-                    <p class="text-sm text-gray-500 mt-2">Continuous loading spinner.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm border flex flex-col items-center text-center">
-                    <div class="relative w-10 h-10 mb-4">
-                        <div class="absolute inset-0 bg-red-400 rounded-full animate-ping opacity-75"></div>
-                        <div class="relative w-10 h-10 bg-red-500 rounded-full shadow-lg"></div>
-                    </div>
-                    <h3 class="font-semibold text-red-500">animate-ping</h3>
-                    <p class="text-sm text-gray-500 mt-2">Notification pulse effect.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm border flex flex-col items-center text-center">
-                    <div class="w-full h-10 bg-gray-300 rounded animate-pulse mb-4"></div>
-                    <h3 class="font-semibold text-gray-600">animate-pulse</h3>
-                    <p class="text-sm text-gray-500 mt-2">Skeleton loader effect.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm border flex flex-col items-center text-center">
-                    <div class="w-10 h-10 bg-green-500 rounded-full animate-bounce mb-4 shadow-lg"></div>
-                    <h3 class="font-semibold text-green-600">animate-bounce</h3>
-                    <p class="text-sm text-gray-500 mt-2">Bouncing indicator.</p>
-                </div>
+                
+<div class="bg-white p-6 rounded-lg shadow-sm border flex flex-col items-center text-center">
+    <!-- here to set first  animate-spin like search action  -->
+<div class="w-10 h-10 border-4 border-blue-200 border-t-blue-600 rounded-full animate-spin mb-4">
+</div>
+<h3 class="font-semibold text-blue-600">animate-spin</h3>
+<p class="text-sm text-gray-500 mt-2">Continuous loading spinner.</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm border flex flex-col items-center text-center">
+<div class="relative w-10 h-10 mb-4">
+<div class="absolute inset-0 bg-red-400 rounded-full animate-ping opacity-75"></div>
+<div class="relative w-10 h-10 bg-red-500 rounded-full shadow-lg"></div>
+</div>
+<h3 class="font-semibold text-red-500">animate-ping</h3>
+<p class="text-sm text-gray-500 mt-2">Notification pulse effect.</p>
+</div>
+<!-- here second anmation  animate-pulse
+set saido and background color  
+-->
+<div class="bg-white p-6 rounded-lg shadow-sm border flex flex-col items-center text-center">
+<div class="w-full h-10 bg-gray-300 rounded animate-pulse mb-4"></div>
+<h3 class="font-semibold text-gray-600">animate-pulse</h3>
+<p class="text-sm text-gray-500 mt-2">Skeleton loader effect.</p>
+</div>
+<!-- third animate make 
+ animate-bounce this animate use lodeing  -->
+<div class="bg-white p-6 rounded-lg shadow-sm border flex flex-col items-center text-center">
+<div class="w-10 h-10 bg-green-500 rounded-full animate-bounce mb-4 shadow-lg"></div>
+<h3 class="font-semibold text-green-600">animate-bounce</h3>
+<p class="text-sm text-gray-500 mt-2">Bouncing indicator.</p>
+</div>
             </div>
         </section>
-
+ <!-- creat second animate  -->
         <section>
-            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Section 2: Button Animations</h2>
-            <div class="flex flex-wrap gap-4 bg-white p-8 rounded-lg shadow-sm border">
-                
-                <button
-                    class="px-4 py-2 bg-blue-500 text-white rounded hover:scale-110 transition duration-300 ease-in-out">
-                    Scale (110%)
+<h2 class="text-2xl font-bold mb-6 border-b pb-2">Section 2: Button Animations</h2>
+<div class="flex flex-wrap gap-4 bg-white p-8 rounded-lg shadow-sm border">
+    <!-- here to creat many type btn and use many animation , ease-in-out-- like scale , scale-shadow 
+     , color change   ,    Rotate Effect , Active (Click Me)        -->
+<button
+class="px-4 py-2 bg-blue-500 text-white rounded hover:scale-110 transition duration-300 ease-in-out">
+Scale (110%)
+</button>
+<button
+class="px-4 py-2 bg-indigo-500 text-white rounded hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
+            Scale + Shadow
                 </button>
-                <button
-                    class="px-4 py-2 bg-indigo-500 text-white rounded hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out">
-                    Scale + Shadow
-                </button>
-                <button
+        <button
                     class="px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-700 transition-colors duration-300 ease-in-out">
                     Color Change
                 </button>
                 <button
-                    class="px-4 py-2 bg-pink-500 text-white rounded hover:rotate-6 transition-transform duration-300 ease-in-out">
-                    Rotate Effect
-                </button>
-                <button
-                    class="px-4 py-2 bg-rose-500 text-white rounded hover:-translate-y-2 transition-transform duration-300 ease-in-out">
-                    Translate (Lift)
-                </button>
-                <button
-                    class="px-4 py-2 bg-teal-500 text-white rounded hover:-translate-y-1 hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out">
-                    Combined Hover
-                </button>
-                <button
-                    class="px-4 py-2 bg-gray-800 text-white rounded active:scale-95 transition-transform duration-150">
-                    Active (Click Me)
-                </button>
+class="px-4 py-2 bg-pink-500 text-white rounded hover:rotate-6 transition-transform duration-300 ease-in-out">
+Rotate Effect
+</button>
+<button
+class="px-4 py-2 bg-rose-500 text-white rounded hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+Translate (Lift)
+</button>
+<button
+class="px-4 py-2 bg-teal-500 text-white rounded hover:-translate-y-1 hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out">
+Combined Hover
+</button>
+<button
+class="px-4 py-2 bg-gray-800 text-white rounded active:scale-95 transition-transform duration-150">
+Active (Click Me)
+</button>
             </div>
         </section>
-
+<!-- here creat thired section 
+ creat hover efaict like hover-y , grounp hover , border revel  -->
         <section>
             <h2 class="text-2xl font-bold mb-6 border-b pb-2">Section 3: Card Animations</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div
-                    class="bg-white p-6 rounded-xl border hover:-translate-y-3 hover:shadow-2xl transition-all duration-300 cursor-pointer">
-                    <h3 class="text-lg font-bold mb-2">Hover Lift</h3>
-                    <p class="text-gray-500">This card lifts up and gains a larger shadow when you hover over it.</p>
+class="bg-white p-6 rounded-xl border hover:-translate-y-3 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+<h3 class="text-lg font-bold mb-2">Hover Lift</h3>
+<p class="text-gray-500">This card lifts up and gains a larger shadow when you hover over it.</p>
                 </div>
-                <div class="group bg-white p-6 rounded-xl border cursor-pointer">
-                    <div
-                        class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">
-                        <span class="text-2xl">🚀</span>
-                    </div>
-                    <h3 class="text-lg font-bold mb-2">Group Hover</h3>
-                    <p class="text-gray-500">Hovering the card rotates and scales the icon inside it.</p>
+<div class="group bg-white p-6 rounded-xl border cursor-pointer">
+<div
+class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">
+<span class="text-2xl">🚀</span>
+</div>
+<h3 class="text-lg font-bold mb-2">Group Hover</h3>
+<p class="text-gray-500">Hovering the card rotates and scales the icon inside it.</p>
                 </div>
                 <div class="relative bg-white p-6 rounded-xl border cursor-pointer group overflow-hidden">
                     <h3 class="text-lg font-bold mb-2">Border Reveal</h3>
+
                     <p class="text-gray-500">Hover to see the animated bottom border slide in smoothly.</p>
                     <div
       class="absolute bottom-0 left-0 h-1 bg-blue-500 w-0 group-hover:w-full transition-all duration-300">
-                    </div>
+</div>
                 </div>
             </div>
         </section>
-
+<!-- here to creat section noatification bar  -->
         <section>
-            <h2 class="text-2xl font-bold mb-6 border-b pb-2">Section 4: Notification Badges</h2>
+<h2 class="text-2xl font-bold mb-6 border-b pb-2">Section 4: Notification Badges</h2>
             <div class="flex gap-12 bg-white p-8 rounded-lg shadow-sm border items-center justify-center">
                 <div class="relative p-3 bg-gray-100 rounded-full cursor-pointer">
                     <span class="text-2xl">🔔</span>
@@ -125,72 +140,73 @@
                 </div>
             </div>
         </section>
-
+ <!-- 5th section 
+ loading status like acount , page reload , , prosesing  
+ -->
         <section>
             <h2 class="text-2xl font-bold mb-6 border-b pb-2">Section 5: Loading States</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="bg-white p-6 rounded-xl border animate-pulse">
-                    <div class="flex space-x-4">
-                        <div class="rounded-full bg-gray-200 h-12 w-12"></div>
-                        <div class="flex-1 space-y-4 py-1">
-                            <div class="h-4 bg-gray-200 rounded w-3/4"></div>
-                            <div class="space-y-2">
-                                <div class="h-4 bg-gray-200 rounded"></div>
-                                <div class="h-4 bg-gray-200 rounded w-5/6"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div class="flex space-x-4">
+<div class="rounded-full bg-gray-200 h-12 w-12"></div>
+<div class="flex-1 space-y-4 py-1">
+<div class="h-4 bg-gray-200 rounded w-3/4"></div>
+<div class="space-y-2">
+<div class="h-4 bg-gray-200 rounded"></div>
+<div class="h-4 bg-gray-200 rounded w-5/6"></div>
+</div>
+</div>
+</div>
+</div>
                 <div class="bg-white p-6 rounded-xl border flex items-center justify-center">
                     <button type="button"
                         class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-indigo-500 hover:bg-indigo-400 transition ease-in-out duration-150 cursor-not-allowed"
                         disabled>
                         <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg"
                             fill="none" viewBox="0 0 24 24">
-                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
-                            </circle>
-                            <path class="opacity-75" fill="currentColor"
-                                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
-                            </path>
-                        </svg>
-                        Processing...
-                    </button>
-                </div>
-                <div class="bg-white p-6 rounded-xl border flex items-center justify-center space-x-2">
-                    <div class="w-4 h-4 bg-blue-500 rounded-full animate-bounce"></div>
-                    <div class="w-4 h-4 bg-blue-500 rounded-full animate-bounce [animation-delay:150ms]"></div>
-                    <div class="w-4 h-4 bg-blue-500 rounded-full animate-bounce [animation-delay:300ms]"></div>
+<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
+</circle>
+<path class="opacity-75" fill="currentColor"
+d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+</path>
+Processing...
+</button>
+</div>
+
+<div class="bg-white p-6 rounded-xl border flex items-center justify-center space-x-2">
+<div class="w-4 h-4 bg-blue-500 rounded-full animate-bounce"></div>
+<div class="w-4 h-4 bg-blue-500 rounded-full animate-bounce [animation-delay:150ms]"></div>
+<div class="w-4 h-4 bg-blue-500 rounded-full animate-bounce [animation-delay:300ms]"></div>
                 </div>
             </div>
         </section>
-
+<!-- last section Staggered Animations -->
         <section>
             <h2 class="text-2xl font-bold mb-6 border-b pb-2">Section 6: Staggered Animations (Delays)</h2>
-    
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="bg-white p-6 rounded-lg border shadow-sm text-center">
-                    <div class="w-8 h-8 mx-auto bg-blue-500 rounded-full animate-bounce [animation-delay:0ms] mb-3">
+                    <div class="w-8 h-8 mx-auto bg-green-500 rounded-full animate-bounce [animation-delay:0ms] mb-3">
                     </div>
                     <h3 class="font-bold">Card 1</h3>
-                    <p class="text-sm text-gray-500">Delay: 0ms</p>
+                    <p class="text-sm text-gray-500 ">Delay: 0ms</p>
                 </div>
                 <div class="bg-white p-6 rounded-lg border shadow-sm text-center">
-                    <div class="w-8 h-8 mx-auto bg-blue-500 rounded-full animate-bounce [animation-delay:150ms] mb-3">
+                    <div class="w-8 h-8 mx-auto bg-pink-500 rounded-full animate-bounce [animation-delay:150ms] mb-3">
                     </div>
                     <h3 class="font-bold">Card 2</h3>
                     <p class="text-sm text-gray-500">Delay: 150ms</p>
                 </div>
                 <div class="bg-white p-6 rounded-lg border shadow-sm text-center">
-                    <div class="w-8 h-8 mx-auto bg-blue-500 rounded-full animate-bounce [animation-delay:300ms] mb-3">
+                    <div class="w-8 h-8 mx-auto bg-red-400 rounded-full animate-bounce [animation-delay:300ms] mb-3">
                     </div>
-                    <h3 class="font-bold">Card 3</h3>
-                    <p class="text-sm text-gray-500">Delay: 300ms</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg border shadow-sm text-center">
-                    <div class="w-8 h-8 mx-auto bg-blue-500 rounded-full animate-bounce [animation-delay:450ms] mb-3">
-                    </div>
-                    <h3 class="font-bold">Card 4</h3>
-                    <p class="text-sm text-gray-500">Delay: 450ms</p>
+<h3 class="font-bold">Card 3</h3>
+<p class="text-sm text-gray-500">Delay: 300ms</p>
+</div>
+<div class="bg-white p-6 rounded-lg border shadow-sm text-center">
+<div class="w-8 h-8 mx-auto bg-yellow-600 rounded-full animate-bounce [animation-delay:450ms] mb-3">
+</div>
+<h3 class="font-bold">Card 4</h3>
+<p class="text-sm text-gray-500">Delay: 450ms</p>
                 </div>
             </div>
         </section>
@@ -199,5 +215,4 @@
         <p>Tailwind UI Feedback & Animations Demo</p>
     </footer>
 </body>
-
 </html>
